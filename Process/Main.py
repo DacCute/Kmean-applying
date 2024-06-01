@@ -1,14 +1,8 @@
 import numpy as np
 import matplotlib as plt
-import pandas as pd
-from scipy.spatial.distance import cdist
+from scipy.spatial.distance import all
 
 #import necessary function
-from preprocess import *
-from process import *
+import preprocess as pre
+import process as pro
 
-data_locate = "../Data/e-shop clothing 2008.csv"
-
-data = data_in(data_locate)
-
-features = ['country']

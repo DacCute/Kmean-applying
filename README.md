@@ -31,7 +31,7 @@ The dataset contains information on clickstream from online store offering cloth
 |Price 2|Binary|Variable informing whether the price of a particular product is higher than the average price for the entire product category|
 |Page|Integer|Page number within the e-store website (1-5)
 
-There are two Feature to notice that ```clothing model``` and ```session ID```
+There are two Feature to notice that ```clothing model``` and ```price```
 
 # About the algorithm
 
