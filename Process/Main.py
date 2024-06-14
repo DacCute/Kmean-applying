@@ -11,4 +11,6 @@ data_locate = "../Data/e-shop clothing 2008.csv"
 
 data = data_in(data_locate)
 
-features = ['country']
+features = ['session ID', 'country', 'page 2 (clothing model)', 'price']
+
+customers = pd.DataFrame({'id': data["session ID"].unique()})
