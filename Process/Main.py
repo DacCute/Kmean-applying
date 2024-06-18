@@ -11,6 +11,9 @@ data_locate = "../Data/e-shop clothing 2008.csv"
 
 data = pd.read_csv(data_locate)
 
-features = ['session ID', 'country', 'page 2 (clothing model)', 'price']
+#make df to work on
+choose_feature()
 
-customers = pd.DataFrame({'id': data["session ID"].unique()})
+#Count number of type / custumer
+type_df()
+
