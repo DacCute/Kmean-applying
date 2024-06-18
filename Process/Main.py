@@ -9,7 +9,7 @@ from process import *
 
 data_locate = "../Data/e-shop clothing 2008.csv"
 
-data = data_in(data_locate)
+data = pd.read_csv(data_locate)
 
 features = ['session ID', 'country', 'page 2 (clothing model)', 'price']
 
