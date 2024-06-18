@@ -1,7 +1,7 @@
 def choose_feature():
     df = pd.DataFrame(data.groupby('session ID')[['session ID', 'country', 'price']].mean())
     df[['session ID', 'country']] = df[['session ID', 'country']].astype(int)
-    df.rename(columns={'session ID': 'custumers'}, inplace= True)
+    df.rename(columns={'session ID': 'customers'}, inplace= True)
     df[['trousers', 'skirts', 'blouses', 'sale']] = 0 
 
 def type_df()
@@ -11,7 +11,7 @@ def type_df()
     cr = 0
     for i, row in df.iterrows():
         print(i,end= ': ')
-        while data['session ID'].iloc[cr] == row['custumers']:
+        while data['session ID'].iloc[cr] == row['customers']:
             row[page_1[data['page 1 (main category)'].iloc[cr]]]  += 1
             cr += 1
             if cr == 165474:
